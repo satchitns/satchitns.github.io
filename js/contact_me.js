@@ -22,12 +22,12 @@ $(function() {
             }
             $.ajax({
                 url: "https://formspree.io/sns1227@gmail.com",
-                type: "POST",
+                method: "POST",
                 data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
+                    name:name,
+                    phone:phone,
+                    _replyto:email,
+                    message:message
                 },
 				dataType: "json",
                 cache: false,
